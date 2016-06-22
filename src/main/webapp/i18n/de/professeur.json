@@ -1,0 +1,24 @@
+{
+    "projetApp": {
+        "professeur" : {
+            "home": {
+                "title": "Professeurs",
+                "createLabel": "Professeur erstellen",
+                "createOrEditLabel": "Professeur erstellen oder bearbeiten",
+                "search": "Suche nach Professeur"
+            },
+            "created": "Professeur erstellt mit ID {{ param }}",
+            "updated": "Professeur aktualisiert mit ID {{ param }}",
+            "deleted": "Professeur gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Professeur {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Professeur"
+            },
+            "departement": "Departement",
+            "profession": "Profession",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

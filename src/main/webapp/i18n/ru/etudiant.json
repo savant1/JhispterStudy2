@@ -1,0 +1,23 @@
+{
+    "projetApp": {
+        "etudiant" : {
+            "home": {
+                "title": "Etudiants",
+                "createLabel": "Создать новый Etudiant",
+                "createOrEditLabel": "Создать или отредактировать Etudiant",
+                "search": "Найти Etudiant"
+            },
+            "created": "Новый Etudiant создан с идентификатором {{ param }}",
+            "updated": "Etudiant обновлен с идентификатором {{ param }}",
+            "deleted": "Etudiant удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Etudiant {{ id }}?"
+            },
+            "detail": {
+                "title": "Etudiant"
+            },
+            "filiere": "Filiere",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "realise",
+            "otherEntityName": "realiser",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "ouvrage"
+        },
+        {
+            "relationshipName": "emprunte",
+            "otherEntityName": "emprunter",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "ouvrage"
+        },
+        {
+            "relationshipName": "commente",
+            "otherEntityName": "commenter",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "ouvrage"
+        },
+        {
+            "relationshipName": "note",
+            "otherEntityName": "noter",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "ouvrage"
+        },
+        {
+            "relationshipName": "recommande",
+            "otherEntityName": "recommander",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "ouvrage"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "filiere",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "categorie",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "discipline",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "titre",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "genre",
+            "fieldType": "Typeouvrage",
+            "fieldValues": "CD,Livre,Article"
+        }
+    ],
+    "changelogDate": "20160615192604",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "ouvrage",
+    "pagination": "pagination"
+}

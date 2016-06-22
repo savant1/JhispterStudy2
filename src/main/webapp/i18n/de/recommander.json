@@ -1,0 +1,24 @@
+{
+    "projetApp": {
+        "recommander" : {
+            "home": {
+                "title": "Recommanders",
+                "createLabel": "Recommander erstellen",
+                "createOrEditLabel": "Recommander erstellen oder bearbeiten",
+                "search": "Suche nach Recommander"
+            },
+            "created": "Recommander erstellt mit ID {{ param }}",
+            "updated": "Recommander aktualisiert mit ID {{ param }}",
+            "deleted": "Recommander gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Recommander {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Recommander"
+            },
+            "raison": "Raison",
+            "ouvrage": "Ouvrage",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

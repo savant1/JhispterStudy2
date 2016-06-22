@@ -1,0 +1,22 @@
+
+<div>
+    <h2><span translate="projetApp.emprunter.detail.title">Emprunter</span> {{vm.emprunter.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="projetApp.emprunter.ouvrage">Ouvrage</span></dt>
+        <dd>
+            <a ui-sref="ouvrage-detail({id:vm.emprunter.ouvrage.id})">{{vm.emprunter.ouvrage.id}}</a>
+        </dd>
+        <dt><span translate="projetApp.emprunter.utilisateur">Utilisateur</span></dt>
+        <dd>
+            <a ui-sref="utilisateur-detail({id:vm.emprunter.utilisateur.id})">{{vm.emprunter.utilisateur.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

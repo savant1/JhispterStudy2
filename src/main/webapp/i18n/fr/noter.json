@@ -1,0 +1,24 @@
+{
+    "projetApp": {
+        "noter" : {
+            "home": {
+                "title": "Noters",
+                "createLabel": "Créer un nouveau Noter",
+                "createOrEditLabel": "Créer ou éditer un Noter",
+                "search": "Recherche pour Noter"
+            },
+            "created": "Un nouveau Noter a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Noter avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Noter avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Noter {{ id }} ?"
+            },
+            "detail": {
+                "title": "Noter"
+            },
+            "note": "Note",
+            "ouvrage": "Ouvrage",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

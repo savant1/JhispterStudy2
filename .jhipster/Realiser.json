@@ -1,0 +1,31 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "ouvrage",
+            "otherEntityName": "ouvrage",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "realiser"
+        },
+        {
+            "relationshipName": "auteur",
+            "otherEntityName": "auteur",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "realiser"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20160615193402",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "realiser",
+    "pagination": "pagination"
+}

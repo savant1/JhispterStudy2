@@ -1,0 +1,10 @@
+{
+    "projetApp": {
+        "Typeouvrage" : {
+            "null": "",
+            "CD": "CD",
+            "Livre": "Livre",
+            "Article": "Article"
+        }
+    }
+}

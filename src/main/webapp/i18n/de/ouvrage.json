@@ -1,0 +1,31 @@
+{
+    "projetApp": {
+        "ouvrage" : {
+            "home": {
+                "title": "Ouvrages",
+                "createLabel": "Ouvrage erstellen",
+                "createOrEditLabel": "Ouvrage erstellen oder bearbeiten",
+                "search": "Suche nach Ouvrage"
+            },
+            "created": "Ouvrage erstellt mit ID {{ param }}",
+            "updated": "Ouvrage aktualisiert mit ID {{ param }}",
+            "deleted": "Ouvrage gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Ouvrage {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Ouvrage"
+            },
+            "filiere": "Filiere",
+            "categorie": "Categorie",
+            "discipline": "Discipline",
+            "titre": "Titre",
+            "genre": "Genre",
+            "realise": "Realise",
+            "emprunte": "Emprunte",
+            "commente": "Commente",
+            "note": "Note",
+            "recommande": "Recommande"
+        }
+    }
+}

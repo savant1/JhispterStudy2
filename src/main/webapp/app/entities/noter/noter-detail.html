@@ -1,0 +1,26 @@
+
+<div>
+    <h2><span translate="projetApp.noter.detail.title">Noter</span> {{vm.noter.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="projetApp.noter.note">Note</span></dt>
+        <dd>
+            <span>{{vm.noter.note}}</span>
+        </dd>
+        <dt><span translate="projetApp.noter.ouvrage">Ouvrage</span></dt>
+        <dd>
+            <a ui-sref="ouvrage-detail({id:vm.noter.ouvrage.id})">{{vm.noter.ouvrage.id}}</a>
+        </dd>
+        <dt><span translate="projetApp.noter.utilisateur">Utilisateur</span></dt>
+        <dd>
+            <a ui-sref="utilisateur-detail({id:vm.noter.utilisateur.id})">{{vm.noter.utilisateur.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

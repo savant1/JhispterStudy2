@@ -1,0 +1,31 @@
+{
+    "projetApp": {
+        "utilisateur" : {
+            "home": {
+                "title": "Utilisateurs",
+                "createLabel": "Utilisateur erstellen",
+                "createOrEditLabel": "Utilisateur erstellen oder bearbeiten",
+                "search": "Suche nach Utilisateur"
+            },
+            "created": "Utilisateur erstellt mit ID {{ param }}",
+            "updated": "Utilisateur aktualisiert mit ID {{ param }}",
+            "deleted": "Utilisateur gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Utilisateur {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Utilisateur"
+            },
+            "nom": "Nom",
+            "prenom": "Prenom",
+            "email": "Email",
+            "pass": "Pass",
+            "blacklist": "Blacklist",
+            "picture": "Picture",
+            "emprunte": "Emprunte",
+            "commente": "Commente",
+            "note": "Note",
+            "recommende": "Recommende"
+        }
+    }
+}

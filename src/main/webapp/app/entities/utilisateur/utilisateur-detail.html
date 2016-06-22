@@ -1,0 +1,41 @@
+
+<div>
+    <h2><span translate="projetApp.utilisateur.detail.title">Utilisateur</span> {{vm.utilisateur.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="projetApp.utilisateur.nom">Nom</span></dt>
+        <dd>
+            <span>{{vm.utilisateur.nom}}</span>
+        </dd>
+        <dt><span translate="projetApp.utilisateur.prenom">Prenom</span></dt>
+        <dd>
+            <span>{{vm.utilisateur.prenom}}</span>
+        </dd>
+        <dt><span translate="projetApp.utilisateur.email">Email</span></dt>
+        <dd>
+            <span>{{vm.utilisateur.email}}</span>
+        </dd>
+        <dt><span translate="projetApp.utilisateur.pass">Pass</span></dt>
+        <dd>
+            <span>{{vm.utilisateur.pass}}</span>
+        </dd>
+        <dt><span translate="projetApp.utilisateur.blacklist">Blacklist</span></dt>
+        <dd>
+            <span>{{vm.utilisateur.blacklist}}</span>
+        </dd>
+        <dt><span translate="projetApp.utilisateur.picture">Picture</span></dt>
+        <dd>
+            <div ng-if="vm.utilisateur.picture">
+                <a ng-click="vm.openFile(vm.utilisateur.pictureContentType, vm.utilisateur.picture)" translate="entity.action.open">open</a>
+                {{vm.utilisateur.pictureContentType}}, {{vm.byteSize(vm.utilisateur.picture)}}
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

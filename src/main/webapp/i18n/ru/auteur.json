@@ -1,0 +1,24 @@
+{
+    "projetApp": {
+        "auteur" : {
+            "home": {
+                "title": "Auteurs",
+                "createLabel": "Создать новый Auteur",
+                "createOrEditLabel": "Создать или отредактировать Auteur",
+                "search": "Найти Auteur"
+            },
+            "created": "Новый Auteur создан с идентификатором {{ param }}",
+            "updated": "Auteur обновлен с идентификатором {{ param }}",
+            "deleted": "Auteur удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Auteur {{ id }}?"
+            },
+            "detail": {
+                "title": "Auteur"
+            },
+            "nom": "Nom",
+            "prenom": "Prenom",
+            "realise": "Realise"
+        }
+    }
+}

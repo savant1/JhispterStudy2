@@ -1,0 +1,60 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "emprunte",
+            "otherEntityName": "emprunter",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "utilisateur"
+        },
+        {
+            "relationshipName": "commente",
+            "otherEntityName": "commenter",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "utilisateur"
+        },
+        {
+            "relationshipName": "note",
+            "otherEntityName": "noter",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "utilisateur"
+        },
+        {
+            "relationshipName": "recommende",
+            "otherEntityName": "recommander",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "utilisateur"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "prenom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pass",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "blacklist",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "picture",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "any"
+        }
+    ],
+    "changelogDate": "20160615194142",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "utilisateur",
+    "pagination": "pagination"
+}

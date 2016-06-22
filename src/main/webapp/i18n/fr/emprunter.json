@@ -1,0 +1,23 @@
+{
+    "projetApp": {
+        "emprunter" : {
+            "home": {
+                "title": "Emprunters",
+                "createLabel": "Créer un nouveau Emprunter",
+                "createOrEditLabel": "Créer ou éditer un Emprunter",
+                "search": "Recherche pour Emprunter"
+            },
+            "created": "Un nouveau Emprunter a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Emprunter avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Emprunter avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Emprunter {{ id }} ?"
+            },
+            "detail": {
+                "title": "Emprunter"
+            },
+            "ouvrage": "Ouvrage",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

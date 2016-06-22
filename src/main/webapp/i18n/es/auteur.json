@@ -1,0 +1,24 @@
+{
+    "projetApp": {
+        "auteur" : {
+            "home": {
+                "title": "Auteurs",
+                "createLabel": "Crear nuevo Auteur",
+                "createOrEditLabel": "Crear o editar Auteur",
+                "search": "Search for Auteur"
+            },
+            "created": "Un nuevo Auteur ha sido creado con el identificador {{ param }}",
+            "updated": "Un Auteur ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Auteur ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Auteur {{ id }}?"
+            },
+            "detail": {
+                "title": "Auteur"
+            },
+            "nom": "Nom",
+            "prenom": "Prenom",
+            "realise": "Realise"
+        }
+    }
+}

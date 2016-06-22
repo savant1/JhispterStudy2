@@ -1,0 +1,24 @@
+{
+    "projetApp": {
+        "noter" : {
+            "home": {
+                "title": "Noters",
+                "createLabel": "Noter erstellen",
+                "createOrEditLabel": "Noter erstellen oder bearbeiten",
+                "search": "Suche nach Noter"
+            },
+            "created": "Noter erstellt mit ID {{ param }}",
+            "updated": "Noter aktualisiert mit ID {{ param }}",
+            "deleted": "Noter gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Noter {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Noter"
+            },
+            "note": "Note",
+            "ouvrage": "Ouvrage",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

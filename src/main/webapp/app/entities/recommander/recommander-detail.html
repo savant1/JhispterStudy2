@@ -1,0 +1,26 @@
+
+<div>
+    <h2><span translate="projetApp.recommander.detail.title">Recommander</span> {{vm.recommander.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="projetApp.recommander.raison">Raison</span></dt>
+        <dd>
+            <span>{{vm.recommander.raison}}</span>
+        </dd>
+        <dt><span translate="projetApp.recommander.ouvrage">Ouvrage</span></dt>
+        <dd>
+            <a ui-sref="ouvrage-detail({id:vm.recommander.ouvrage.id})">{{vm.recommander.ouvrage.id}}</a>
+        </dd>
+        <dt><span translate="projetApp.recommander.utilisateur">Utilisateur</span></dt>
+        <dd>
+            <a ui-sref="utilisateur-detail({id:vm.recommander.utilisateur.id})">{{vm.recommander.utilisateur.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

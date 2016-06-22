@@ -1,0 +1,34 @@
+
+<div>
+    <h2><span translate="projetApp.ouvrage.detail.title">Ouvrage</span> {{vm.ouvrage.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="projetApp.ouvrage.filiere">Filiere</span></dt>
+        <dd>
+            <span>{{vm.ouvrage.filiere}}</span>
+        </dd>
+        <dt><span translate="projetApp.ouvrage.categorie">Categorie</span></dt>
+        <dd>
+            <span>{{vm.ouvrage.categorie}}</span>
+        </dd>
+        <dt><span translate="projetApp.ouvrage.discipline">Discipline</span></dt>
+        <dd>
+            <span>{{vm.ouvrage.discipline}}</span>
+        </dd>
+        <dt><span translate="projetApp.ouvrage.titre">Titre</span></dt>
+        <dd>
+            <span>{{vm.ouvrage.titre}}</span>
+        </dd>
+        <dt><span translate="projetApp.ouvrage.genre">Genre</span></dt>
+        <dd>
+            <span translate="{{'projetApp.Typeouvrage.' + vm.ouvrage.genre}}">{{vm.ouvrage.genre}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

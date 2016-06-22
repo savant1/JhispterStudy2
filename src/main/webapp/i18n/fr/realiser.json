@@ -1,0 +1,24 @@
+{
+    "projetApp": {
+        "realiser" : {
+            "home": {
+                "title": "Realisers",
+                "createLabel": "Créer un nouveau Realiser",
+                "createOrEditLabel": "Créer ou éditer un Realiser",
+                "search": "Recherche pour Realiser"
+            },
+            "created": "Un nouveau Realiser a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Realiser avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Realiser avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Realiser {{ id }} ?"
+            },
+            "detail": {
+                "title": "Realiser"
+            },
+            "date": "Date",
+            "ouvrage": "Ouvrage",
+            "auteur": "Auteur"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "projetApp": {
+        "emprunter" : {
+            "home": {
+                "title": "Emprunters",
+                "createLabel": "Создать новый Emprunter",
+                "createOrEditLabel": "Создать или отредактировать Emprunter",
+                "search": "Найти Emprunter"
+            },
+            "created": "Новый Emprunter создан с идентификатором {{ param }}",
+            "updated": "Emprunter обновлен с идентификатором {{ param }}",
+            "deleted": "Emprunter удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Emprunter {{ id }}?"
+            },
+            "detail": {
+                "title": "Emprunter"
+            },
+            "ouvrage": "Ouvrage",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

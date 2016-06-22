@@ -1,0 +1,24 @@
+{
+    "projetApp": {
+        "professeur" : {
+            "home": {
+                "title": "Professeurs",
+                "createLabel": "Создать новый Professeur",
+                "createOrEditLabel": "Создать или отредактировать Professeur",
+                "search": "Найти Professeur"
+            },
+            "created": "Новый Professeur создан с идентификатором {{ param }}",
+            "updated": "Professeur обновлен с идентификатором {{ param }}",
+            "deleted": "Professeur удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Professeur {{ id }}?"
+            },
+            "detail": {
+                "title": "Professeur"
+            },
+            "departement": "Departement",
+            "profession": "Profession",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

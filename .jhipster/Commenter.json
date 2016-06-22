@@ -1,0 +1,26 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "ouvrage",
+            "otherEntityName": "ouvrage",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "commenter"
+        },
+        {
+            "relationshipName": "utilisateur",
+            "otherEntityName": "utilisateur",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "commenter"
+        }
+    ],
+    "fields": [],
+    "changelogDate": "20160615195322",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "commenter",
+    "pagination": "pagination"
+}

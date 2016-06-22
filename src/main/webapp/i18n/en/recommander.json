@@ -1,0 +1,24 @@
+{
+    "projetApp": {
+        "recommander" : {
+            "home": {
+                "title": "Recommanders",
+                "createLabel": "Create a new Recommander",
+                "createOrEditLabel": "Create or edit a Recommander",
+                "search": "Search for Recommander"
+            },
+            "created": "A new Recommander is created with identifier {{ param }}",
+            "updated": "A Recommander is updated with identifier {{ param }}",
+            "deleted": "A Recommander is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Recommander {{ id }}?"
+            },
+            "detail": {
+                "title": "Recommander"
+            },
+            "raison": "Raison",
+            "ouvrage": "Ouvrage",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

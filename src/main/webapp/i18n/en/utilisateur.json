@@ -1,0 +1,31 @@
+{
+    "projetApp": {
+        "utilisateur" : {
+            "home": {
+                "title": "Utilisateurs",
+                "createLabel": "Create a new Utilisateur",
+                "createOrEditLabel": "Create or edit a Utilisateur",
+                "search": "Search for Utilisateur"
+            },
+            "created": "A new Utilisateur is created with identifier {{ param }}",
+            "updated": "A Utilisateur is updated with identifier {{ param }}",
+            "deleted": "A Utilisateur is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Utilisateur {{ id }}?"
+            },
+            "detail": {
+                "title": "Utilisateur"
+            },
+            "nom": "Nom",
+            "prenom": "Prenom",
+            "email": "Email",
+            "pass": "Pass",
+            "blacklist": "Blacklist",
+            "picture": "Picture",
+            "emprunte": "Emprunte",
+            "commente": "Commente",
+            "note": "Note",
+            "recommende": "Recommende"
+        }
+    }
+}

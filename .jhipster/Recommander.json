@@ -1,0 +1,31 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "ouvrage",
+            "otherEntityName": "ouvrage",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "recommander"
+        },
+        {
+            "relationshipName": "utilisateur",
+            "otherEntityName": "utilisateur",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "recommander"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "raison",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160615200219",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "recommander",
+    "pagination": "pagination"
+}

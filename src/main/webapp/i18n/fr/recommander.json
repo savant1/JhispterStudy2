@@ -1,0 +1,24 @@
+{
+    "projetApp": {
+        "recommander" : {
+            "home": {
+                "title": "Recommanders",
+                "createLabel": "Créer un nouveau Recommander",
+                "createOrEditLabel": "Créer ou éditer un Recommander",
+                "search": "Recherche pour Recommander"
+            },
+            "created": "Un nouveau Recommander a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Recommander avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Recommander avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Recommander {{ id }} ?"
+            },
+            "detail": {
+                "title": "Recommander"
+            },
+            "raison": "Raison",
+            "ouvrage": "Ouvrage",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

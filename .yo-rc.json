@@ -1,0 +1,36 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "3.4.0",
+    "baseName": "Projet",
+    "packageName": "com.thedevbridge.jhipster",
+    "packageFolder": "com/thedevbridge/jhipster",
+    "serverPort": "8080",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "buildTool": "maven",
+    "enableSocialSignIn": true,
+    "rememberMeKey": "ab52144f9593a3ecfa05e99983837a5bd835ddb0",
+    "useSass": false,
+    "applicationType": "monolith",
+    "testFrameworks": [
+      "gatling"
+    ],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": [
+      "fr",
+      "en",
+      "de",
+      "it",
+      "ru",
+      "es"
+    ]
+  }
+}

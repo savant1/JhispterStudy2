@@ -1,0 +1,23 @@
+{
+    "projetApp": {
+        "commenter" : {
+            "home": {
+                "title": "Commenters",
+                "createLabel": "Commenter erstellen",
+                "createOrEditLabel": "Commenter erstellen oder bearbeiten",
+                "search": "Suche nach Commenter"
+            },
+            "created": "Commenter erstellt mit ID {{ param }}",
+            "updated": "Commenter aktualisiert mit ID {{ param }}",
+            "deleted": "Commenter gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Commenter {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Commenter"
+            },
+            "ouvrage": "Ouvrage",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

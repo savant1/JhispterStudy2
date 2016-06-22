@@ -1,0 +1,23 @@
+{
+    "projetApp": {
+        "commenter" : {
+            "home": {
+                "title": "Commenters",
+                "createLabel": "Créer un nouveau Commenter",
+                "createOrEditLabel": "Créer ou éditer un Commenter",
+                "search": "Recherche pour Commenter"
+            },
+            "created": "Un nouveau Commenter a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Commenter avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Commenter avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Commenter {{ id }} ?"
+            },
+            "detail": {
+                "title": "Commenter"
+            },
+            "ouvrage": "Ouvrage",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "projetApp": {
+        "commenter" : {
+            "home": {
+                "title": "Commenters",
+                "createLabel": "Create a new Commenter",
+                "createOrEditLabel": "Create or edit a Commenter",
+                "search": "Search for Commenter"
+            },
+            "created": "A new Commenter is created with identifier {{ param }}",
+            "updated": "A Commenter is updated with identifier {{ param }}",
+            "deleted": "A Commenter is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Commenter {{ id }}?"
+            },
+            "detail": {
+                "title": "Commenter"
+            },
+            "ouvrage": "Ouvrage",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

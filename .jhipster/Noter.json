@@ -1,0 +1,31 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "ouvrage",
+            "otherEntityName": "ouvrage",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "noter"
+        },
+        {
+            "relationshipName": "utilisateur",
+            "otherEntityName": "utilisateur",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "noter"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "note",
+            "fieldType": "Double"
+        }
+    ],
+    "changelogDate": "20160615200008",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "noter",
+    "pagination": "pagination"
+}

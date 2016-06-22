@@ -1,0 +1,24 @@
+{
+    "projetApp": {
+        "recommander" : {
+            "home": {
+                "title": "Recommanders",
+                "createLabel": "Создать новый Recommander",
+                "createOrEditLabel": "Создать или отредактировать Recommander",
+                "search": "Найти Recommander"
+            },
+            "created": "Новый Recommander создан с идентификатором {{ param }}",
+            "updated": "Recommander обновлен с идентификатором {{ param }}",
+            "deleted": "Recommander удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Recommander {{ id }}?"
+            },
+            "detail": {
+                "title": "Recommander"
+            },
+            "raison": "Raison",
+            "ouvrage": "Ouvrage",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

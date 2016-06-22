@@ -1,0 +1,25 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "realise",
+            "otherEntityName": "realiser",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "auteur"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "prenom",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160615191115",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "auteur",
+    "pagination": "pagination"
+}

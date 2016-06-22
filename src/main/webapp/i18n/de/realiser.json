@@ -1,0 +1,24 @@
+{
+    "projetApp": {
+        "realiser" : {
+            "home": {
+                "title": "Realisers",
+                "createLabel": "Realiser erstellen",
+                "createOrEditLabel": "Realiser erstellen oder bearbeiten",
+                "search": "Suche nach Realiser"
+            },
+            "created": "Realiser erstellt mit ID {{ param }}",
+            "updated": "Realiser aktualisiert mit ID {{ param }}",
+            "deleted": "Realiser gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Realiser {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Realiser"
+            },
+            "date": "Date",
+            "ouvrage": "Ouvrage",
+            "auteur": "Auteur"
+        }
+    }
+}

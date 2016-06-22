@@ -1,0 +1,23 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "utilisateur",
+            "otherEntityName": "utilisateur",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "etudiant"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "filiere",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160615200617",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "etudiant",
+    "pagination": "pagination"
+}

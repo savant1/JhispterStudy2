@@ -1,0 +1,23 @@
+{
+    "projetApp": {
+        "emprunter" : {
+            "home": {
+                "title": "Emprunters",
+                "createLabel": "Emprunter erstellen",
+                "createOrEditLabel": "Emprunter erstellen oder bearbeiten",
+                "search": "Suche nach Emprunter"
+            },
+            "created": "Emprunter erstellt mit ID {{ param }}",
+            "updated": "Emprunter aktualisiert mit ID {{ param }}",
+            "deleted": "Emprunter gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Emprunter {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Emprunter"
+            },
+            "ouvrage": "Ouvrage",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}

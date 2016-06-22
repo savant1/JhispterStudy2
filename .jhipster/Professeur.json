@@ -1,0 +1,27 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "utilisateur",
+            "otherEntityName": "utilisateur",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "professeur"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "departement",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "profession",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160615201024",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "professeur",
+    "pagination": "pagination"
+}

@@ -1,0 +1,24 @@
+{
+    "projetApp": {
+        "noter" : {
+            "home": {
+                "title": "Noters",
+                "createLabel": "Создать новый Noter",
+                "createOrEditLabel": "Создать или отредактировать Noter",
+                "search": "Найти Noter"
+            },
+            "created": "Новый Noter создан с идентификатором {{ param }}",
+            "updated": "Noter обновлен с идентификатором {{ param }}",
+            "deleted": "Noter удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Noter {{ id }}?"
+            },
+            "detail": {
+                "title": "Noter"
+            },
+            "note": "Note",
+            "ouvrage": "Ouvrage",
+            "utilisateur": "Utilisateur"
+        }
+    }
+}
