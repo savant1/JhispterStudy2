@@ -75,6 +75,21 @@
                 }]
             }
         })
+        .state('page', {
+            parent: 'entity',
+            url: '/page/',
+            data: {
+                authorities: ['ROLE_USER'],
+                pageTitle: 'page de concat'
+            },
+            views: {
+                'content@': {
+                    templateUrl: 'app/entities/auteur/page.html',
+                    controller: 'PageController',
+                    controllerAs: 'vm'
+                }
+            }
+        })
         .state('auteur.new', {
             parent: 'auteur',
             url: '/new',
