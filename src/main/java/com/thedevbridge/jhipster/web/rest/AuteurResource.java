@@ -34,13 +34,13 @@ import static org.elasticsearch.index.query.QueryBuilders.*;
 public class AuteurResource {
 
     private final Logger log = LoggerFactory.getLogger(AuteurResource.class);
-        
+
     @Inject
     private AuteurRepository auteurRepository;
-    
+
     @Inject
     private AuteurSearchRepository auteurSearchRepository;
-    
+
     /**
      * POST  /auteurs : Create a new auteur.
      *
@@ -103,7 +103,7 @@ public class AuteurResource {
     public ResponseEntity<List<Auteur>> getAllAuteurs(Pageable pageable)
         throws URISyntaxException {
         log.debug("REST request to get a page of Auteurs");
-        Page<Auteur> page = auteurRepository.findAll(pageable); 
+        Page<Auteur> page = auteurRepository.findAll(pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/auteurs");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
@@ -163,12 +163,29 @@ public class AuteurResource {
         HttpHeaders headers = PaginationUtil.generateSearchPaginationHttpHeaders(query, page, "/api/_search/auteurs");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
-    
+
     @RequestMapping(value = "/auteur/concat/{chaine1}/{chaine2}",
     		method = RequestMethod.GET)
     @Timed
     public String concat(@PathVariable String chaine1,@PathVariable String chaine2){
     	return chaine1+chaine2;
     }
+
+    @RequestMapping(value = "/auteur/getAllAuthor/auteur",
+    		method = RequestMethod.GET,
+    		produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public List<Auteur> getAllAuthor(){
+        return auteurRepository.findAll();
+    }
+
+    @RequestMapping(value = "/auteur/getAuthorBy/auteurName/{chaine1}",
+    		method = RequestMethod.GET,
+    		produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public Auteur findByName(@PathVariable String chaine1){
+        return auteurRepository.findByName(chaine1);
+    }
+
 
 }

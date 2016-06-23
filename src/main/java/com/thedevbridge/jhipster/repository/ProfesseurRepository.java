@@ -11,5 +11,5 @@ import java.util.List;
  */
 @SuppressWarnings("unused")
 public interface ProfesseurRepository extends JpaRepository<Professeur,Long> {
-
+    Professeur findByUtilisateurNom(String nom);
 }

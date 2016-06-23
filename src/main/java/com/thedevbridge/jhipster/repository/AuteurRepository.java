@@ -11,5 +11,6 @@ import java.util.List;
  */
 @SuppressWarnings("unused")
 public interface AuteurRepository extends JpaRepository<Auteur,Long> {
-
+    //ici nous mettons toutes les requetes que spring ne genere pas pour une entite
+    Auteur findByName(String nom);
 }

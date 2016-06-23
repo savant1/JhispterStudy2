@@ -34,13 +34,13 @@ import static org.elasticsearch.index.query.QueryBuilders.*;
 public class ProfesseurResource {
 
     private final Logger log = LoggerFactory.getLogger(ProfesseurResource.class);
-        
+
     @Inject
     private ProfesseurRepository professeurRepository;
-    
+
     @Inject
     private ProfesseurSearchRepository professeurSearchRepository;
-    
+
     /**
      * POST  /professeurs : Create a new professeur.
      *
@@ -103,7 +103,7 @@ public class ProfesseurResource {
     public ResponseEntity<List<Professeur>> getAllProfesseurs(Pageable pageable)
         throws URISyntaxException {
         log.debug("REST request to get a page of Professeurs");
-        Page<Professeur> page = professeurRepository.findAll(pageable); 
+        Page<Professeur> page = professeurRepository.findAll(pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/professeurs");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
@@ -163,5 +163,12 @@ public class ProfesseurResource {
         HttpHeaders headers = PaginationUtil.generateSearchPaginationHttpHeaders(query, page, "/api/_search/professeurs");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
+
+     @RequestMapping(value = "/professeur/utilisateur/nom/{chaine1}",
+        		method = RequestMethod.GET)
+        @Timed
+        public Professeur findByName(@PathVariable String chaine1){
+            return professeurRepository.findByUtilisateurNom(chaine1);
+        }
 
 }
