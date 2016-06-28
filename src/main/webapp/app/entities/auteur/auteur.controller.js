@@ -5,11 +5,13 @@
         .module('projetApp')
         .controller('AuteurController', AuteurController);
 
-    AuteurController.$inject = ['$scope', '$state', 'Auteur', 'AuteurSearch', 'ParseLinks', 'AlertService', 'pagingParams', 'paginationConstants'];
+    AuteurController.$inject = ['$scope', '$state', 'Auteur', 'AuteurSearch', 'ParseLinks', 'AlertService', 'pagingParams', 'paginationConstants','$http'];
 
-    function AuteurController ($scope, $state, Auteur, AuteurSearch, ParseLinks, AlertService, pagingParams, paginationConstants) {
+    function AuteurController ($scope, $state, Auteur, AuteurSearch, ParseLinks, AlertService, pagingParams, paginationConstants, $http) {
         var vm = this;
-        
+        vm.auteurNewAttribute = [];
+        $scope.objet = {id:"", nom:"", prenom: "", nombreOuv:""};
+
         vm.loadPage = loadPage;
         vm.predicate = pagingParams.predicate;
         vm.reverse = pagingParams.ascending;
@@ -49,7 +51,38 @@
                 vm.queryCount = vm.totalItems;
                 vm.auteurs = data;
                 vm.page = pagingParams.page;
+                for(var nn=0; nn<vm.auteurs.length; nn++){
+                    $scope.objet.id = vm.auteurs[nn].id;
+                    $scope.objet.nom = vm.auteurs[nn].nom;
+                    $scope.objet.prenom = vm.auteurs[nn].prenom;
+                    $scope.objet.nombreOuv = 0;
+
+                    $scope.init($scope.objet.id);
+
+                    vm.auteurNewAttribute.push($scope.objet);
+                    $scope.objet = {};
+
+                };
+              //  $scope.init();
             }
+
+
+            $scope.init = function (id){
+                console.log(vm.auteurNewAttribute[3]);
+              //  for(var kk = 0; kk<vm.auteurNewAttribute.length; kk++){
+                    $http.get("/api/auteur/countOuvrage/"+id)
+                        .success(function(resp){
+                            console.log(resp);
+                            vm.auteurNewAttribute[id-1].nombreOuv = resp;
+                        })
+                        .error(function(error)
+                        {
+                            console.log(error)
+                        });
+             //   }
+            };
+
+
             function onError(error) {
                 AlertService.error(error.data.message);
             }

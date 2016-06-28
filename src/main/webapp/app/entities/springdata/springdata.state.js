@@ -23,7 +23,7 @@
                 views: {
                     'content@': {
                         templateUrl: 'app/entities/springdata/springdata.html',
-                        controller: 'AuteurController',
+                        controller: 'springdata',
                         controllerAs: 'vm'
                     }
                 }

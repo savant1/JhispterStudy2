@@ -3,9 +3,11 @@ package com.thedevbridge.jhipster.web.rest;
 import com.codahale.metrics.annotation.Timed;
 import com.thedevbridge.jhipster.domain.Auteur;
 import com.thedevbridge.jhipster.repository.AuteurRepository;
+import com.thedevbridge.jhipster.repository.RealiserRepository;
 import com.thedevbridge.jhipster.repository.search.AuteurSearchRepository;
 import com.thedevbridge.jhipster.web.rest.util.HeaderUtil;
 import com.thedevbridge.jhipster.web.rest.util.PaginationUtil;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
@@ -17,6 +19,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.inject.Inject;
+
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
@@ -34,13 +37,16 @@ import static org.elasticsearch.index.query.QueryBuilders.*;
 public class AuteurResource {
 
     private final Logger log = LoggerFactory.getLogger(AuteurResource.class);
-
+        
     @Inject
     private AuteurRepository auteurRepository;
-
+    
     @Inject
     private AuteurSearchRepository auteurSearchRepository;
-
+    
+    @Inject
+    private RealiserRepository realiserRepository;
+    
     /**
      * POST  /auteurs : Create a new auteur.
      *
@@ -103,7 +109,7 @@ public class AuteurResource {
     public ResponseEntity<List<Auteur>> getAllAuteurs(Pageable pageable)
         throws URISyntaxException {
         log.debug("REST request to get a page of Auteurs");
-        Page<Auteur> page = auteurRepository.findAll(pageable);
+        Page<Auteur> page = auteurRepository.findAll(pageable); 
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/auteurs");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
@@ -163,9 +169,10 @@ public class AuteurResource {
         HttpHeaders headers = PaginationUtil.generateSearchPaginationHttpHeaders(query, page, "/api/_search/auteurs");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
-
+    
     @RequestMapping(value = "/auteur/concat/{chaine1}/{chaine2}",
-    		method = RequestMethod.GET)
+    		method = RequestMethod.GET,
+    		produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
     public String concat(@PathVariable String chaine1,@PathVariable String chaine2){
     	return chaine1+chaine2;
@@ -184,7 +191,15 @@ public class AuteurResource {
     		produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
     public Auteur findByName(@PathVariable String chaine1){
-        return auteurRepository.findByName(chaine1);
+        return auteurRepository.findByNom(chaine1);
+    }
+
+    @RequestMapping(value = "/auteur/countOuvrage/{id}",
+    		method = RequestMethod.GET,
+    		produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public Long countOuvrage(@PathVariable Long id){
+        return (long) realiserRepository.countByAuteurId(id);
     }
 
 

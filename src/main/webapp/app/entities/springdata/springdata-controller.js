@@ -22,6 +22,7 @@
             {
                 console.log(error)
             });
-    }
+    };
+    springdata();
 })();
 

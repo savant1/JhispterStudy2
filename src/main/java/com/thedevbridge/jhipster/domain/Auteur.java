@@ -37,6 +37,9 @@ public class Auteur implements Serializable {
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<Realiser> realises = new HashSet<>();
 
+    @Transient
+    private Long nombreArticle;
+
     public Long getId() {
         return id;
     }
@@ -57,7 +60,7 @@ public class Auteur implements Serializable {
         return prenom;
     }
 
-    public void setPrenom(String prenom) {
+	public void setPrenom(String prenom) {
         this.prenom = prenom;
     }
 
@@ -69,7 +72,15 @@ public class Auteur implements Serializable {
         this.realises = realisers;
     }
 
-    @Override
+    public Long getNombreArticle() {
+		return nombreArticle;
+	}
+
+	public void setNombreArticle(Long nombreArticle) {
+		this.nombreArticle = nombreArticle;
+	}
+
+	@Override
     public boolean equals(Object o) {
         if (this == o) {
             return true;

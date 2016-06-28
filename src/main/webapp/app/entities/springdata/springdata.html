@@ -24,9 +24,8 @@
 <div class="row">
     <strong>* Un auteur</strong> <br/>
     <select name="" id="">
-        <option value="">test1</option>
-        <option value="">test3</option>
-        <option value="">test2</option>
+        <option value="">SELECTIONNER UN AUTEUR</option>
+        <option ng-repeat="auteur in auteurs" ng-model="nom">{{auteur.nom}}</option>
     </select>
     <div class="col-xs-12">
         <table class="table table-hover">
