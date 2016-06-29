@@ -25,12 +25,12 @@
                 <constraints nullable="true" />
             </column>
                         <column name="ouvrage_id" type="bigint">
-                <constraints unique="true" nullable="true" />
+                <constraints  nullable="true" />
             </column>            <column name="auteur_id" type="bigint">
-                <constraints unique="true" nullable="true" />
+                <constraints  nullable="true" />
             </column>
             <!-- jhipster-needle-liquibase-add-column - Jhipster will add columns here, do not remove-->
         </createTable>
-        
+
     </changeSet>
 </databaseChangeLog>

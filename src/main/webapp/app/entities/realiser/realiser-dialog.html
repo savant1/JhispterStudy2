@@ -26,13 +26,13 @@
 
         <div class="form-group">
             <label translate="projetApp.realiser.ouvrage" for="field_ouvrage">Ouvrage</label>
-            <select class="form-control" id="field_ouvrage" name="ouvrage" ng-model="vm.realiser.ouvrage" ng-options="ouvrage as ouvrage.id for ouvrage in vm.ouvrages | orderBy:'id' track by ouvrage.id">
+            <select class="form-control" id="field_ouvrage" name="ouvrage" ng-model="vm.realiser.ouvrage" ng-options="ouvrage as ouvrage.filiere for ouvrage in vm.ouvrages | orderBy:'id' track by ouvrage.id">
                 <option value=""></option>
             </select>
         </div>
         <div class="form-group">
             <label translate="projetApp.realiser.auteur" for="field_auteur">Auteur</label>
-            <select class="form-control" id="field_auteur" name="auteur" ng-model="vm.realiser.auteur" ng-options="auteur as auteur.id for auteur in vm.auteurs | orderBy:'id' track by auteur.id">
+            <select class="form-control" id="field_auteur" name="auteur" ng-model="vm.realiser.auteur" ng-options="auteur as auteur.nom for auteur in vm.auteurs | orderBy:'id' track by auteur.id">
                 <option value=""></option>
             </select>
         </div>
