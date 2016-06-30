@@ -24,5 +24,21 @@
             });
     };
     springdata();
+
+    $scope.change = function(id){
+        $scope.aut = {};
+
+        $http.get("api/auteur/getAuthorBy/id/"+id)
+            .success(function(data){
+                console.log(data);
+                $scope.aut = data;
+            })
+            .error(function(error)
+            {
+                console.log(error)
+            });
+    }
+    $scope.change();
+
 })();
 

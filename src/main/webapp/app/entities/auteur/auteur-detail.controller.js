@@ -5,9 +5,9 @@
         .module('projetApp')
         .controller('AuteurDetailController', AuteurDetailController);
 
-    AuteurDetailController.$inject = ['$scope', '$rootScope', '$stateParams', 'entity', 'Auteur', 'Realiser'];
+    AuteurDetailController.$inject = ['$scope', '$rootScope', '$stateParams', 'entity', 'Auteur', 'Realiser','$http'];
 
-    function AuteurDetailController($scope, $rootScope, $stateParams, entity, Auteur, Realiser) {
+    function AuteurDetailController($scope, $rootScope, $stateParams, entity, Auteur, Realiser, $http) {
         var vm = this;
 
         vm.auteur = entity;
@@ -16,5 +16,17 @@
             vm.auteur = result;
         });
         $scope.$on('$destroy', unsubscribe);
+
+        function getNbreOuvrage(){
+            $http.get("api/auteur/getNbreOuvrageBy/"+vm.auteur.nom)
+                .success(function(data){
+                    $scope.nbreOuv = data;
+                })
+                .error(function(error)
+                {
+                    console.log(error)
+                });
+        }
+        getNbreOuvrage();
     }
 })();

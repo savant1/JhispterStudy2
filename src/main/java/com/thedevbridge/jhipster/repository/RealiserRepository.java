@@ -13,10 +13,8 @@ import java.util.List;
  */
 @SuppressWarnings("unused")
 public interface RealiserRepository extends JpaRepository<Realiser,Long> {
-//	@Query("select * from realiser r,auteur a,ouvrage o "
-//			+ "where r.auteur = :a.id and a.ouvrage = :o.ouvrage ,")
-//	Realiser findByIdAndOuvrage(@Param("a.id") Long id,
-//            @Param("ouvage") Ouvrage ouvrage);
 	Long findByAuteurId(Long id);
 	Long countByAuteurId(Long id);
+	Long countByAuteurNom(String nom);
+
 }

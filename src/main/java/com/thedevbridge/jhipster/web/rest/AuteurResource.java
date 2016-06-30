@@ -37,16 +37,16 @@ import static org.elasticsearch.index.query.QueryBuilders.*;
 public class AuteurResource {
 
     private final Logger log = LoggerFactory.getLogger(AuteurResource.class);
-        
+
     @Inject
     private AuteurRepository auteurRepository;
-    
+
     @Inject
     private AuteurSearchRepository auteurSearchRepository;
-    
+
     @Inject
     private RealiserRepository realiserRepository;
-    
+
     /**
      * POST  /auteurs : Create a new auteur.
      *
@@ -109,7 +109,7 @@ public class AuteurResource {
     public ResponseEntity<List<Auteur>> getAllAuteurs(Pageable pageable)
         throws URISyntaxException {
         log.debug("REST request to get a page of Auteurs");
-        Page<Auteur> page = auteurRepository.findAll(pageable); 
+        Page<Auteur> page = auteurRepository.findAll(pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/auteurs");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
@@ -169,7 +169,7 @@ public class AuteurResource {
         HttpHeaders headers = PaginationUtil.generateSearchPaginationHttpHeaders(query, page, "/api/_search/auteurs");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
-    
+
     @RequestMapping(value = "/auteur/concat/{chaine1}/{chaine2}",
     		method = RequestMethod.GET,
     		produces = MediaType.APPLICATION_JSON_VALUE)
@@ -200,6 +200,22 @@ public class AuteurResource {
     @Timed
     public Long countOuvrage(@PathVariable Long id){
         return (long) realiserRepository.countByAuteurId(id);
+    }
+
+    @RequestMapping(value = "/auteur/getAuthorBy/id/{id}",
+    		method = RequestMethod.GET,
+    		produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public Auteur findById(@PathVariable Long id){
+        return auteurRepository.findById(id);
+    }
+
+    @RequestMapping(value = "/auteur/getNbreOuvrageBy/{nom}",
+    		method = RequestMethod.GET,
+    		produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public Long getNbreOuvrageBy(@PathVariable String nom){
+        return (long) realiserRepository.countByAuteurNom(nom);
     }
 
 

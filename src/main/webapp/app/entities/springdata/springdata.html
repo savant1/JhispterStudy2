@@ -25,7 +25,7 @@
     <strong>* Un auteur</strong> <br/>
     <select name="" id="">
         <option value="">SELECTIONNER UN AUTEUR</option>
-        <option ng-repeat="auteur in auteurs" ng-model="nom">{{auteur.nom}}</option>
+        <option ng-repeat="auteur in auteurs track by auteur.id" ng-change="change(auteur.id)" ng-model="nom">{{auteur.nom}}</option>
     </select>
     <div class="col-xs-12">
         <table class="table table-hover">
@@ -37,11 +37,11 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>{{}}</td>
-                <td>{{}}</td>
-                <td>{{}}</td>
-            </tr>
+            <!--<tr ng-change="change(auteur.id)">-->
+                <!--<td>{{aut.id}}</td>-->
+                <!--<td>{{aut.nom}}</td>-->
+                <!--<td>{{aut.prenom}}</td>-->
+            <!--</tr>-->
             </tbody>
         </table>
     </div>
